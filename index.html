@@ -4,16 +4,46 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.dom.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.2/addons/p5.sound.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <meta charset="utf-8" />
-
+    <title>Home</title>
+    <script type="text/javascript">
+      window.onscroll = function() {myFunction()};
+      function myFunction() {
+        if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+          document.getElementById("toparrow").style.opacity = "0.7";
+        } else {
+          document.getElementById("toparrow").style.opacity = "0";
+        }
+      }
+    </script>
   </head>
   <body>
-    <h1>The Spirit Base</h1>
-    <nav><div>Projects</div><div>About</div></nav>
+    <header>
+      <h1>The Spirit Base</h1>
+      <nav>
+        <div><a href="#projects">Projects</a></div>
+        <div><a href="#about">About</a></div>
+      </nav>
+    </header>
+    <img id="banner" src="assets/img/banner.png" alt="banner">
     <div id="container">
-      <h2>Welcome to this website</h2>
+      <h2>Welcome to the Spirit's World</h2>
+      <p>This website will be serving to showcase some project that I made/will make with Javascript (like p5.js).</p>
+      <h2 id="projects">Projects</h2>
+      <h3>Processing (Javascript)</h3>
+      <ul>
+        <li><a href="p5/asteroids">Asteroids game</a></li>
+        <li><a href="p5/lifeordeath">Life or Death</a></li>
+        <li><a href="p5/roguelike">Rogue like</a></li>
+        <li><a href="p5/walker">Walker</a></li>
+        <li><a href="p5/wordPlay">Word Play</a></li>
+      </ul>
+      <h3>Node.js</h3>
+      <h2 id="about">About</h2>
+      <p>TBA...</p>
+      <div id="toparrow"><a href="#">⇧</a></div>
     </div>
-    <script src="sketch.js"></script>
+    <script src="assets/js/sketch.js"></script>
   </body>
 </html>
