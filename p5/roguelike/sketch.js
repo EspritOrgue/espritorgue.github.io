@@ -1,37 +1,21 @@
-var ctr;
-var x,y;
+var ctr, c,r;
 function preload(){
   ctr = loadJSON("control.json");
 }
 
 function setup(){
   createCanvas(800,600);
-  x = width/2;
-  y = height/2;
+  w = random(200,width/2)-10;
+  r = new Room(w,w*0.75);
+  c = new Player();
 }
 
 function draw(){
   background(0);
   strokeWeight(4);
   stroke(255);
+  r.show();
 
-  point(x,y);
-}
-
-function keyPressed(){
-  console.log(key);
-  switch(key){
-    case ctr.controls.up:
-      y--;
-    break;
-    case ctr.controls.down:
-      y++;
-    break;
-    case ctr.controls.left:
-       x--;
-    break;
-    case ctr.controls.right:
-      x++;
-    break;
-  }
+  c.update(r);
+  c.show();
 }

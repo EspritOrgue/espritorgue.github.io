@@ -1,18 +1,18 @@
 {
   "controls":
   {
-    "up": "ArrowUp",
-    "down": "ArrowDown",
-    "left": "ArrowLeft",
-    "right": "ArrowRight",
+    "up": 38,
+    "down": 40,
+    "left": 37,
+    "right": 39,
     "attack": "",
     "action": ""
   },
   "altcontrols":{
-    "up": "w",
-    "down": "s",
-    "left": "a",
-    "right": "d",
+    "up": 87,
+    "down": 83,
+    "left": 65,
+    "right": 68,
     "attack": "",
     "action": ""
   }
