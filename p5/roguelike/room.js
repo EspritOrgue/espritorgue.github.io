@@ -1,7 +1,7 @@
 class Room{
   constructor(w,h){
-    this.x = width/2;
-    this.y = height/2;
+    this.x = 0;
+    this.y = 0;
     this.w = w;
     this.h = h;
     this.door = 5;
