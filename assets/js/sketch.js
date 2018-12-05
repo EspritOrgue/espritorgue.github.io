@@ -1,11 +1,13 @@
 var total = 60;
-var r = 100;
-var x0,y0, h, m, s;
+var r = 80;
+var x0,y0, h, m, s, c;
+var bool = false;
 
 function setup() {
   createCanvas(250, 250);
   x0 = 0;
   y0 = 0;
+  c = color(floor(random(255)),floor(random(255)),floor(random(255)));
 }
 
 function draw() {
@@ -19,7 +21,7 @@ function draw() {
   rotate(-PI/2);
   strokeWeight(1);
   stroke(25);
-  ellipse(x0,y0,r*2);
+  ellipse(x0,y0,r*2+15);
 
   // The 60 points for the clock
   for(var i=0; i<total; i++){
@@ -37,17 +39,28 @@ function draw() {
     var y = y0 + r*sin(i*TWO_PI/total);
   	point(x,y);
   }
-  
+
+  if(s==0){
+    if(!bool){
+        c = color(floor(random(255)),floor(random(255)),floor(random(255)));
+        bool = !bool;
+    }
+  }else if(s == 1){
+    if(bool){
+      bool = !bool;
+    }
+  }
+
   // Logo
-  fill(255);
+  fill(c);
   noStroke();
   ellipseMode(CENTER);
-  ellipse(0,0,60);
+  ellipse(0,0,r-10);
   push();
   fill(0);
-  ellipse(0,0,35);
+  ellipse(0,0,r/2);
   rectMode(CENTER);
-  rect(0,0,10,60);
+  rect(0,0,7,r-5);
   pop();
-  ellipse(0,0,20);
+  ellipse(0,0,r/3);
 }

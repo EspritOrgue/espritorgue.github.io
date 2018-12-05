@@ -75,18 +75,50 @@ ul{
 }
 ul li{
   background: #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #000;
   margin: 5px;
   list-style-type: none;
   overflow: hidden;
-  padding: 10px;
+  padding: 20px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  position: relative;
   text-align: center;
   text-overflow: ellipsis;
   white-space: nowrap;
   width: 200px;
 }
+ul li::before {
+  background: red;
+  border-right: 1px solid #000;
+  box-shadow: 0 0 7px #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+}
+ul li::after {
+  background: white;
+  border-left: 1px solid #000;
+  box-shadow: 0 0 7px #000;
+  content: "";
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 10px;
+}
+ul li:hover{
+  background: #999;
+  box-shadow: 0 0 5px inset;
+}
 ul li a{
   color: #000;
   text-decoration: none;
+  width: 100%;
 }
 /*ABOUT*/
 #about-p{
