@@ -1,0 +1,19 @@
+html, body {
+  background: #fff;
+}
+body{
+  overflow: hidden;
+}
+canvas {
+  display: block;
+}
+#name-list{
+  background: #ccc;
+  border: 1px solid #000;
+  box-shadow: 0 0 5px inset #000;
+  overflow: auto;
+}
+
+#name-list p{
+	margin: 15px;
+}
