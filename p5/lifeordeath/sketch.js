@@ -6,12 +6,6 @@
 // Another version:
 // https://github.com/shiffman/NOC-S17-2-Intelligence-Learning/tree/master/week2-evolution/01_evolve_steering
 
-// Part 1: [TBA]
-// Part 2: [TBA]
-// Part 3: [TBA]
-// Part 4: [TBA]
-// Part 5: [TBA]
-
 var vehicles = [];
 var food = [];
 var poison = [];
