@@ -1,0 +1,19 @@
+html, body{
+   margin: 0;
+   padding: 0;
+   overflow: hidden;
+}
+
+#alert {
+   background: rgb(255,0,100);
+   border: 1px solid #f00;
+   border-radius: 10px;
+   display: inline-block;
+   left: 20%;
+   padding: 10px;
+   position: fixed;
+   text-align: center;
+   top: 10px;
+   width: 60%;
+   z-index: 100;
+}
