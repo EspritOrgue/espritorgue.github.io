@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
@@ -15,96 +16,189 @@
    <meta property="og:title" content="The Spirit Base" />
    <meta property="og:description" content="This website is a showcase of my projects and other stuffs." />
    <script type="text/javascript">
-   window.onscroll = function() {myFunction()};
-   function myFunction() {
-      if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-         document.getElementById("toparrow").style.opacity = "0.7";
-      } else {
-         document.getElementById("toparrow").style.opacity = "0";
+      window.onscroll = function() {
+         myFunction()
+      };
+
+      function myFunction() {
+         if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+            document.getElementById("toparrow").style.opacity = "0.7";
+         } else {
+            document.getElementById("toparrow").style.opacity = "0";
+         }
       }
-   }
    </script>
 </head>
-<body>
-   <header>
-      <h1>The Spirit Base</h1>
-      <nav>
-         <div><a href="#projects">Projects</a></div>
-         <div><a href="#about">About</a></div>
-      </nav>
-   </header>
-   <img id="banner" src="assets/img/banner.png" alt="banner">
-   <div id="container">
-      <h2>Welcome to the Spirit's World</h2>
-      <p>I will be using this website to display some project that I made/will make that are either hosted on Github (Other repos or the one for this website) or hosted on the web.</p>
-      <h2 id="projects">Projects</h2>
-      <h3>P5.js (Processing in Javascript)</h3>
-      <div class="group-1-container">
-         <div class="group-1">
-            <div><a href="p5/asteroids" title="Asteroid game" target="_blank">Asteroid game</a></div>
-            <div>A basis for an asteroid game (dropped)</div>
-         </div>
-         <div class="group-1">
-            <div><a href="p5/lifeordeath" title="Life or Death" target="_blank">Life or Death</a></div>
-            <div>Slightly modified the code behind the life or death game from the Coding train</div>
-         </div>
-         <div class="group-1">
-            <div><a href="p5/roguelike" title="Rogue like" target="_blank">Rogue like</a></div>
-            <div>Basis of a rogue-like game</div>
-         </div>
-         <div class="group-1">
-            <div><a href="p5/walker" title="Walker" target="_blank">Walker</a></div>
-            <div>A Random Walker scene</div>
-         </div>
-         <div class="group-1">
-            <div><a href="p5/wordGenerator" title="Word Generator" target="_blank">Word Generator</a></div>
-            <div>Word Generator displaying a table of the letters' frenquency (for french)</div>
-         </div>
-         <div class="group-1">
-            <div><a href="p5/wordPlay" title="Word Play" target="_blank">Word Play</a></div>
-            <div>A word generator using a few dictionary</div>
-         </div>
-      </div>
 
-      <h3>Node.js</h3>
-      <div class="group-1-container">
-         <div class="group-1">
-            <div><a href="https://github.com/EspritOrgue/nekoBot" title="NekoBot (Discord)" target="_blank">NekoBot (Discord)</a></div>
-            <div>My main bot that is always connected.</div>
+<body data-spy="scroll" data-target="#navbar-example2">
+   <nav id="navbar-example2" class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">The Spirit Base</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+         <ul class="navbar-nav nav-pills mr-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+               <a class="nav-link" href="#spirit-p5">P5.JS</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#spirit-nodejs">Node.js</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#spirit-php">PHP</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#spirit-about">About myself</a>
+            </li>
+         </ul>
+      </div>
+   </nav>
+   <img id="banner" class="img-fluid" src="assets/img/banner.png" alt="banner">
+   <div class="w-100 p-2">
+      <p class="h1">Welcome to the Spirit's World</p>
+      <p>I will be using this website to display some project that I made/will make that are either hosted on Github (Other repos or the one for this website) or hosted on the web.</p>
+      <p id="spirit-project" class="h2">Projets</p>
+      <p id="spirit-p5" class="h3">P5.js (Processing in Javascript)</p>
+      <div class="row row-cols-1 row-cols-md-4 mr-0">
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Asteroid game</h5>
+                  <p class="card-text">A basis for an asteroid game (dropped)</p>
+                  <a href="p5/asteroids" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
          </div>
-         <div class="group-1">
-            <div><a href="https://github.com/EspritOrgue/PokeBot" title="PokeBot (Discord)" target="_blank">PokeBot (Discord)</a></div>
-            <div>An old skeleton of a bot, was my first attempt to create one</div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Life or Death</h5>
+                  <p class="card-text">Slightly modified the code behind the life or death game from the Coding Train</p>
+                  <a href="p5/lifeordeath" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
          </div>
-         <div class="group-1">
-            <div><a href="https://github.com/EspritOrgue/SakuBot" title="SakuBot (Discord)" target="_blank">SakuBot (Discord)</a></div>
-            <div>Dropped bot< used to display logs and having twitter feeds</div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Rogue like</h5>
+                  <p class="card-text">First try on a Rogue Like game.</p>
+                  <a href="p5/roguelike" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Random Walker</h5>
+                  <p class="card-text">A random walker scene</p>
+                  <a href="p5/walker" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Word Generator</h5>
+                  <p class="card-text">Word Generator displaying a table of the letters' frenquency (for french)</p>
+                  <a href="p5/wordGenerator" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Word Play</h5>
+                  <p class="card-text">A word generator using various dictionaries</p>
+                  <a href="p5/wordPlay" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
          </div>
       </div>
-      <h3>PHP</h3>
-      <div class="group-1-container">
-         <div class="group-1">
-            <div><a href="http://osef.is-great.org/" title="BoredBoard" target="_blank">BoredBoard</a></div>
-            <div>A board for bored people.</div>
+      <p id="spirit-nodejs" class="h3">Node.js</p>
+      <div class="row row-cols-1 row-cols-md-4 mr-0">
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">NekoBot (Discord)</h5>
+                  <p class="card-text">My main bot that is almost always connected.</p>
+                  <a href="https://github.com/EspritOrgue/nekoBot" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
          </div>
-         <div class="group-1">
-            <div><a href="http://stadium.my-board.org/" title="Pokémon Stadium Soundboard" target="_blank">Pokémon Stadium Soundboard</a></div>
-            <div>A soundboard using the pokemon stadium french comment</div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">PokeBot (Discord)</h5>
+                  <p class="card-text">An old skeleton of a bot, was my first attempt to create one</p>
+                  <a href="https://github.com/EspritOrgue/PokeBot" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
          </div>
-         <div class="group-1">
-            <div><a href="http://espritorgue.byethost24.com/index2.php" title="Very old website" target="_blank">Very old website</a></div>
-            <div>Website that has almost 10 years now!</div>
-         </div>
-         <div class="group-1">
-            <div><a href="http://kanpani-timer.22web.org/?i=1" title="A timer for a closed version of the game Kanpani Girls" target="_blank">A timer for a closed version of the game "Kanpani Girls"</a></div>
-            <div>That was used by fans for an old game.</div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">SakuBot (Discord)</h5>
+                  <p class="card-text">Dropped bot - used to display logs and having twitter feeds</p>
+                  <a href="https://github.com/EspritOrgue/SakuBot" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
          </div>
       </div>
+      <p id="spirit-php" class="h3">PHP</p>
+      <div class="row row-cols-1 row-cols-md-4 mr-0">
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">BoredBoard</h5>
+                  <p class="card-text">A board for bored people.</p>
+                  <a href="http://osef.is-great.org/" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Pokémon Stadium Soundboard</h5>
+                  <p class="card-text">A soundboard using the pokemon stadium french comment.</p>
+                  <a href="http://stadium.my-board.org/" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">Very old website</h5>
+                  <p class="card-text">Website that has almost 10 years now!</p>
+                  <a href="http://espritorgue.byethost24.com/index2.php" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+         <div class="col mb-4">
+            <div class="card">
+               <div class="card-body">
+                  <h5 class="card-title">A timer for a closed version of the game "Kanpani Girls"</h5>
+                  <p class="card-text">That was used by fans for an old game.</p>
+                  <a href="http://kanpani-timer.22web.org/?i=1" target="_blank" class="btn btn-primary">Visit Project</a>
+               </div>
+            </div>
+         </div>
+      </div>
+      <p id="spirit-about" class="h2">About myself</p>
+      <p>I'm a graduate in Information Science and Technology with a background in Computer Science and Medecine. <br>I like to use Web Technologies (Especially Javascript) to do my project, but I can adapt to mostly any kind of
+         languages if necessary.</p>
+      <div id="toparrow"><a href="#">⇧</a></div>
+      <div class="text-center">
+         <hr>© Made By Esprit Orgue (Amir Alwash)</div>
+   </div>
+   <!--
       <h2 id="about">About myself</h2>
       <p id="about-p">I'm a graduate in Information Science and Technology with a background in Computer Science and Medecine. <br>I like to use Web Technologies (Especially Javascript) to do my project, but I can adapt to mostly any kind of languages if necessary.</p>
-      <div id="toparrow"><a href="#">⇧</a></div>
+
    </div>
    <div id="footer"><hr>© Made By Esprit Orgue (Amir Alwash)</div>
+-->
    <script src="assets/js/sketch.js"></script>
 </body>
+
 </html>
