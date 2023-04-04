@@ -1,12 +1,41 @@
-/*GENERAL*/
-html, body {
-   background: #ddd;
-   margin: 0;
-   padding: 0;
+.ui.middle.menu {
+   border: none !important;
+   justify-content: center;
+   margin: 0 !important;
 }
-body{
-   position: relative;
+
+.ui.middle.menu .header.item::before{
+   background: none !important;
 }
+
+.ui.secondary.menu{
+   background:  #333;
+   margin-top: 0;
+   margin-bottom: 0;
+}
+
+.ui.secondary.menu a.item{
+   color: #bbb;
+}
+
+.ui.secondary.menu a.active.item {
+   color: #fff !important;
+}
+
+.ui.container.fluid{
+   margin: 1rem 5rem;
+   width: auto !important;;
+}
+
+.ui.spirited-cards.container{
+   margin: auto !important;
+   width: 90vw !important;
+}
+
+.ui.error.message{
+   margin: 0 !important;
+}
+
 /*ARROW*/
 #toparrow{
    background: #333;
